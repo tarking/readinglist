@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.tarking.entity.Advertiser",
+      "name": "amazon",
+      "type": "com.tarking.entity.Advertiser"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.tarking.entity.Advertiser",
+      "name": "amazon.address",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tarking.entity.Advertiser",
+      "name": "amazon.associate-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.tarking.entity.Advertiser",
+      "name": "amazon.email",
+      "type": "java.lang.String"
+    }
+  ]
+}

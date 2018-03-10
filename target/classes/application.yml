@@ -18,3 +18,7 @@ logging:
   level:
     org.springframework.boot.autoconfigure.security: DEBUG
 
+amazon:
+  associateId: tarking
+  email: 492300925@qq.com
+  address: Xi'An
