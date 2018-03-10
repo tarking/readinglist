@@ -1,0 +1,20 @@
+spring:
+  thymeleaf:
+    cache: false  #禁用thymeleaf模版缓存，也可以配置到环境变量里
+  main:
+    show-banner:  false  #启动时不显示banner
+
+
+server:
+  port: 8443
+  ssl:
+    key-store: file:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/mykeys.jks
+    key-store-password: tarking
+    key-password: tarking
+
+logging:
+  path: /Users/tuojinguo/Documents/Mydoc/workspace/logs
+  file: readinglist.log
+  level:
+    org.springframework.boot.autoconfigure.security: DEBUG
+

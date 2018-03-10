@@ -14,6 +14,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 /**
  * Created by tuojinguo on 2018/3/8.
  */
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -30,6 +31,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/login")
                 .failureUrl("/login?error=true");
+
+        //http.csrf().disable();  //禁用CSRF
     }
 
     @Override
@@ -37,9 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(new UserDetailsService() {
             @Override
             public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-                //Reader reader  = new Reader();
-                //reader.setUsername(username);
-                //Example<Reader> example = Example.of(reader);
+
                 return readerRepository.findOne(username);
             }
         });
